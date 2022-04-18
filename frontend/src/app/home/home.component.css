@@ -1,0 +1,41 @@
+
+
+.grid-container {
+  padding: 20px;
+  background-color: #171A29;
+
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  color: white;
+  background-color: #171A29;
+  box-shadow: 2px 2px 4px #000000, -2px -2px 4px rgba(255, 255, 255, 0.25);
+  font-size: 9px;
+  cursor: pointer;
+}
+
+
+.dashboard-card-content {
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+
+.mat-h1{
+  color: white;
+  text-align: right;
+}
+
+mat-card img{
+  object-fit: contain; /*this makes the image in src fit to the size specified below*/
+  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 100%;
+}
+
+

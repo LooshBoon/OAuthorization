@@ -1,0 +1,196 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; background-color:#171A29 ;
+  ; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color:#171A29  }
+
+
+
+
+.mat-button{
+
+  background: linear-gradient(89.8deg, #DD4F71 9.42%, #593D83 114.18%);
+  box-shadow: 2px 2px 4px #000000, -2px -2px 4px rgba(214, 52, 156, 0.37);
+  border-radius: 5px;
+
+
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*ref-form*/
+
+.refForm{
+
+
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Navbar*/
+
+.sidenav-container {
+  height: 100%;
+  color: white;
+}
+
+.sidenav {
+  width: 200px;
+  background: #171A29 80%;
+  color: white;
+
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  color: white;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: white;
+  background: #171A29 80%;
+}
+
+.mat-list-item{
+  color: white;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*Home*/
+
+.grid-container {
+  padding: 20px;
+  background-color: #171A29;
+  list-style-type: none;
+
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  color: white;
+  background-color: #171A29;
+  box-shadow: 2px 2px 4px #000000, -2px -2px 4px rgba(255, 255, 255, 0.25);
+  font-size: 9px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+
+.mat-h1{
+  color: white;
+  text-align: center;
+}
+
+.mat-h1.referral{
+  margin-top: 50px;
+}
+
+.friend-container{
+
+  margin: 40px 40px 40px;
+  flex: 1 1 auto;
+  border:  20px white;
+
+}
+
+.mat-button.friend{
+width: 100%;
+margin-top: 60px;
+
+}
+
+.unfriend{
+  text-align: right;
+}
+
+.login-card{
+  width: 300px;
+  height: 50px;
+  background-color: #171A29;
+}
+
+.mat-card-image{
+  height: 200px;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Register Form Component*/
+
+label {
+  display: block;
+  margin-top: 10px;
+
+}
+
+.card-container.card {
+
+  padding: 40px 40px;
+
+
+}
+
+.card {
+  background-color: #171A29;
+  padding: 20px 25px 30px;
+
+  display: block;
+
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+/*Table */
+table {
+  width: 100%;
+  border: 10px black;
+
+}
+
+td{
+  text-align: left;
+  border-color: azure;
+  font-size: 18px;
+  padding: 20px;
+}

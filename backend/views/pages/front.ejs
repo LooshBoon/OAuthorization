@@ -1,0 +1,44 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html style="background-color:black;">
+
+<head>
+    <title style="color: white;">Razer Oauth</title>
+</head>
+<body>
+<div class="container" style="background-color:black;">
+    <div>
+        <h1 style="color: white;">Razer OAuth</h1>
+        <a href="/login/razer" class="rzr btn">Login with RazerID</a>
+        <a href="/auth/steam" class="rzr btn">Login with Steam</a>
+        <a href="/oauth/battlenet" class="rzr btn">Login with Battlenet</a>
+    </div>
+</div>
+</body>
+</html> 
+
+<style>
+input,
+    .btn {
+    width: 20%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    }
+
+input:hover,
+    .btn:hover {
+    opacity: 1;
+    }
+
+.rzr {
+    background-color: #66B933;
+    color: black;
+}
+</style>

@@ -1,0 +1,74 @@
+<div class="col-md-12">
+  <div class="card card-container">
+    <form
+      *ngIf="!isLoggedIn"
+
+      name="form"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      #f="ngForm"
+      novalidate
+    >
+
+    <!--Email and Password fields-->
+    <h1 style="color: whitesmoke;">Login</h1>
+      <div class="form-group">
+        <label for="email" style="color: whitesmoke;">Email</label>
+        <input
+          type="text"
+          class="form-control"
+          name="email"
+          [(ngModel)]="form.email"
+          required
+          #email="ngModel"
+        />
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="f.submitted && email.invalid"
+        >
+          Email is required!
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password"  style="color: whitesmoke;">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          [(ngModel)]="form.password"
+          required
+          minlength="6"
+          #password="ngModel"
+        />
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="f.submitted && password.invalid"
+        >
+          <div *ngIf="password.errors.required">Password is required</div>
+          <div *ngIf="password.errors.minlength">
+            Password must be at least 6 characters
+          </div>
+        </div>
+      </div>
+
+      <!--Login button-->
+      <div class="form-group">
+        <button class="mat-button btn-block">
+          Login
+        </button>
+      </div>
+      <div class="form-group">
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="f.submitted && isLoginFailed"
+        >
+          Login failed: {{ errorMessage }}
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>

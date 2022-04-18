@@ -1,0 +1,67 @@
+
+<div class="grid-container"  *ngIf="oauth">
+
+  <h1 class="mat-h1">{{fName}}</h1>
+  <div>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <div *ngFor="let status of oauth">
+    <mat-grid-tile *ngIf="!status.steam_status">
+      <mat-card class="dashboard-card" (click)="steamRedir()" >
+        <picture>
+          <source media='(min-width:0px)' srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRknBrH5K1aDNvLpYPAkIBfgNdzrB82q5RFuA&usqp=CAU">
+          <img mat-card-image src="" alt="Photo of a Shiba Inu">
+        </picture>
+      </mat-card>
+
+
+    </mat-grid-tile>
+
+    <mat-grid-tile *ngIf="status.steam_status" >
+      <mat-card class="dashboard-card" >
+        <mat-card-content class="dashboard-card-content">
+          <div> {{status.steam_id}}</div>
+ <br><br><br><br><br><br><br>
+        <!--<div> <button (click)="updateStatus(false)">Unlink Steam Account</button> </div>-->
+
+         </mat-card-content>
+
+
+      </mat-card>
+
+
+    </mat-grid-tile>
+
+
+    <mat-grid-tile *ngIf="!status.battlenet_status" >
+      <mat-card class="dashboard-card" (click)="blizzardRedir()">
+
+        <picture>
+          <source media='(min-width:0px)' srcset="https://icon-library.com/images/battlenet-icon/battlenet-icon-1.jpg">
+          <img mat-card-image src="" alt="Photo of a Shiba Inu">
+        </picture>
+
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile *ngIf="status.battlenet_status" >
+      <mat-card class="dashboard-card" >
+
+
+
+
+        <mat-card-content class="dashboard-card-content">
+         <div> {{status.battlenet_id}}</div>
+         <br><br><br><br><br><br><br>
+        <!--<div> <button (click)="updateBattlenetStatus(false)">Unlink Battlenet Account</button> </div>-->
+        </mat-card-content>
+
+      </mat-card>
+    </mat-grid-tile>
+
+  </div>
+
+  </mat-grid-list>
+
+</div>
+
+
